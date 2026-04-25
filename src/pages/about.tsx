@@ -13,7 +13,7 @@ const AboutPage = () => (
     />
 
     <section className="mx-auto grid max-w-6xl gap-8 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-12">
-      <div className="space-y-6 text-lg leading-8 text-slate-600">
+      <div className="theme-body space-y-6 text-lg leading-8">
         <p>
           Start with a sharp summary of your background. For example: you build
           integrated marketing programs that combine strategy, content, demand
@@ -31,32 +31,28 @@ const AboutPage = () => (
         </p>
       </div>
 
-      <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
+      <div className="theme-card rounded-3xl border p-8">
+        <p className="theme-accent text-sm font-semibold uppercase tracking-[0.18em]">
           Quick Snapshot
         </p>
-        <dl className="mt-6 space-y-5 text-slate-600">
+        <dl className="theme-body mt-6 space-y-5">
           <div>
-            <dt className="text-sm uppercase tracking-[0.18em] text-slate-500">
-              Focus
-            </dt>
-            <dd className="mt-2 text-lg text-slate-900">
+            <dt className="text-sm uppercase tracking-[0.18em]">Focus</dt>
+            <dd className="theme-heading mt-2 text-lg">
               Growth marketing, brand campaigns, and lifecycle strategy
             </dd>
           </div>
           <div>
-            <dt className="text-sm uppercase tracking-[0.18em] text-slate-500">
-              Strength
-            </dt>
-            <dd className="mt-2 text-lg text-slate-900">
+            <dt className="text-sm uppercase tracking-[0.18em]">Strength</dt>
+            <dd className="theme-heading mt-2 text-lg">
               Turning messy goals into clear plans and measurable execution
             </dd>
           </div>
           <div>
-            <dt className="text-sm uppercase tracking-[0.18em] text-slate-500">
+            <dt className="text-sm uppercase tracking-[0.18em]">
               Collaboration
             </dt>
-            <dd className="mt-2 text-lg text-slate-900">
+            <dd className="theme-heading mt-2 text-lg">
               Product, design, sales, leadership, and external partners
             </dd>
           </div>

@@ -40,12 +40,12 @@ const ServicesPage = () => (
         {services.map((service) => (
           <article
             key={service.title}
-            className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
+            className="theme-card rounded-3xl border p-8"
           >
-            <h2 className="text-2xl font-semibold text-slate-900">
+            <h2 className="theme-heading text-2xl font-semibold">
               {service.title}
             </h2>
-            <p className="mt-4 text-base leading-7 text-slate-600">
+            <p className="theme-body mt-4 text-base leading-7">
               {service.description}
             </p>
           </article>

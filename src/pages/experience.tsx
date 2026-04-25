@@ -41,17 +41,15 @@ const ExperiencePage = () => (
         {roles.map((role) => (
           <article
             key={`${role.years}-${role.company}`}
-            className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
+            className="theme-card rounded-3xl border p-8"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
+            <p className="theme-accent text-sm font-semibold uppercase tracking-[0.18em]">
               {role.years}
             </p>
-            <h2 className="mt-3 text-2xl font-semibold text-slate-900">
+            <h2 className="theme-heading mt-3 text-2xl font-semibold">
               {role.title}, {role.company}
             </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              {role.summary}
-            </p>
+            <p className="theme-body mt-4 text-lg leading-8">{role.summary}</p>
           </article>
         ))}
       </div>

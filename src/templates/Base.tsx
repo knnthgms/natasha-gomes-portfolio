@@ -5,17 +5,17 @@ import { SiteLayout } from './SiteLayout';
 
 const Base = () => (
   <SiteLayout title={AppConfig.title} description={AppConfig.description}>
-    <section className="border-b border-slate-200">
+    <section className="theme-divider border-b">
       <div className="mx-auto flex max-w-6xl flex-col gap-16 px-6 py-8 lg:px-12">
         <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+            <p className="theme-accent text-sm font-semibold uppercase tracking-[0.2em]">
               Marketing Manager
             </p>
-            <h2 className="mt-4 text-5xl font-semibold leading-tight tracking-tight text-slate-900 md:text-6xl">
+            <h2 className="theme-heading mt-4 text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
               Building growth programs that turn attention into revenue.
             </h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="theme-body mt-6 max-w-2xl text-lg leading-8">
               Replace this copy with a concise positioning statement about the
               kind of marketing work you lead. This starter is set up for
               campaign strategy, content leadership, lifecycle marketing, and
@@ -24,13 +24,13 @@ const Base = () => (
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
+                className="theme-button-primary rounded-full px-6 py-3 text-sm font-semibold transition"
                 href="mailto:natasha@portfolio.com"
               >
                 Email Me
               </a>
               <Link
-                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
+                className="theme-button-secondary rounded-full border px-6 py-3 text-sm font-semibold transition"
                 href="/about"
               >
                 Learn More
@@ -39,31 +39,31 @@ const Base = () => (
           </div>
 
           <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+            <div className="theme-card rounded-2xl border p-6">
+              <p className="theme-body text-sm uppercase tracking-[0.18em]">
                 Pipeline Growth
               </p>
-              <p className="mt-4 text-4xl font-semibold text-slate-900">42%</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
+              <p className="theme-heading mt-4 text-4xl font-semibold">42%</p>
+              <p className="theme-body mt-2 text-sm leading-6">
                 YoY increase in qualified pipeline from integrated campaigns.
               </p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+            <div className="theme-card rounded-2xl border p-6">
+              <p className="theme-body text-sm uppercase tracking-[0.18em]">
                 Launch Velocity
               </p>
-              <p className="mt-4 text-4xl font-semibold text-slate-900">18</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
+              <p className="theme-heading mt-4 text-4xl font-semibold">18</p>
+              <p className="theme-body mt-2 text-sm leading-6">
                 Multi-channel launches led in one year across paid, email, and
                 web.
               </p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+            <div className="theme-card rounded-2xl border p-6">
+              <p className="theme-body text-sm uppercase tracking-[0.18em]">
                 Team Leadership
               </p>
-              <p className="mt-4 text-4xl font-semibold text-slate-900">6</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
+              <p className="theme-heading mt-4 text-4xl font-semibold">6</p>
+              <p className="theme-body mt-2 text-sm leading-6">
                 Internal and freelance contributors coordinated across creative
                 and ops.
               </p>
@@ -75,50 +75,50 @@ const Base = () => (
 
     <section className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
       <div className="max-w-2xl">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+        <p className="theme-accent text-sm font-semibold uppercase tracking-[0.2em]">
           Selected Wins
         </p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+        <h2 className="theme-heading mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
           A clean place to showcase outcomes, not just responsibilities.
         </h2>
       </div>
 
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
-        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+        <article className="theme-card rounded-3xl border p-8">
+          <p className="theme-body text-sm font-semibold uppercase tracking-[0.18em]">
             Demand Generation
           </p>
-          <h3 className="mt-4 text-2xl font-semibold text-slate-900">
+          <h3 className="theme-heading mt-4 text-2xl font-semibold">
             Rebuilt the campaign engine around audience intent.
           </h3>
-          <p className="mt-4 text-base leading-7 text-slate-600">
+          <p className="theme-body mt-4 text-base leading-7">
             Use this card for a strong case-study summary: what changed, what
             channels were involved, and what measurable business result came out
             of it.
           </p>
         </article>
 
-        <article className="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white shadow-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-300">
+        <article className="theme-card-strong rounded-3xl border p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--theme-accent-warm)]">
             Brand Campaign
           </p>
           <h3 className="mt-4 text-2xl font-semibold">
             Took a product launch from narrative to rollout.
           </h3>
-          <p className="mt-4 text-base leading-7 text-slate-300">
+          <p className="theme-card-strong-body mt-4 text-base leading-7">
             Highlight a launch you led across messaging, creative briefs,
             stakeholder alignment, and post-launch reporting.
           </p>
         </article>
 
-        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+        <article className="theme-card rounded-3xl border p-8">
+          <p className="theme-body text-sm font-semibold uppercase tracking-[0.18em]">
             Lifecycle Marketing
           </p>
-          <h3 className="mt-4 text-2xl font-semibold text-slate-900">
+          <h3 className="theme-heading mt-4 text-2xl font-semibold">
             Improved conversion by tightening nurture journeys.
           </h3>
-          <p className="mt-4 text-base leading-7 text-slate-600">
+          <p className="theme-body mt-4 text-base leading-7">
             This is a good slot for email, retention, upsell, onboarding, or CRM
             work that proves you can turn strategy into repeatable systems.
           </p>
@@ -126,55 +126,55 @@ const Base = () => (
       </div>
     </section>
 
-    <section className="border-y border-slate-200 bg-white/70 px-6 py-20 lg:px-12">
+    <section className="theme-divider border-y px-6 py-20 lg:px-12">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+          <p className="theme-accent text-sm font-semibold uppercase tracking-[0.2em]">
             Capabilities
           </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="theme-heading mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
             Built for a marketing manager who works across strategy and
             execution.
           </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-600">
+          <p className="theme-body mt-6 text-lg leading-8">
             Keep this section focused on the handful of strengths you want a
             hiring manager or client to remember after a quick scan.
           </p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-stone-50 p-6">
-            <h3 className="text-xl font-semibold text-slate-900">
+          <div className="theme-card-soft rounded-2xl border p-6">
+            <h3 className="theme-heading text-xl font-semibold">
               Campaign Strategy
             </h3>
-            <p className="mt-3 leading-7 text-slate-600">
+            <p className="theme-body mt-3 leading-7">
               Positioning, segmentation, messaging frameworks, launch planning,
               and channel orchestration.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-stone-50 p-6">
-            <h3 className="text-xl font-semibold text-slate-900">
+          <div className="theme-card-soft rounded-2xl border p-6">
+            <h3 className="theme-heading text-xl font-semibold">
               Content Leadership
             </h3>
-            <p className="mt-3 leading-7 text-slate-600">
+            <p className="theme-body mt-3 leading-7">
               Editorial planning, copy direction, creative briefing, and content
               performance reviews.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-stone-50 p-6">
-            <h3 className="text-xl font-semibold text-slate-900">
+          <div className="theme-card-soft rounded-2xl border p-6">
+            <h3 className="theme-heading text-xl font-semibold">
               Marketing Operations
             </h3>
-            <p className="mt-3 leading-7 text-slate-600">
+            <p className="theme-body mt-3 leading-7">
               Automation, reporting cadences, dashboard design, and cleaner
               handoffs with sales and RevOps.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-stone-50 p-6">
-            <h3 className="text-xl font-semibold text-slate-900">
+          <div className="theme-card-soft rounded-2xl border p-6">
+            <h3 className="theme-heading text-xl font-semibold">
               Team Management
             </h3>
-            <p className="mt-3 leading-7 text-slate-600">
+            <p className="theme-body mt-3 leading-7">
               Managing agencies, freelancers, and internal partners without
               losing speed or brand consistency.
             </p>
@@ -186,76 +186,76 @@ const Base = () => (
     <section className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+          <p className="theme-accent text-sm font-semibold uppercase tracking-[0.2em]">
             Experience Snapshot
           </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="theme-heading mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
             Start with a simple timeline, then deepen it later with full case
             studies.
           </h2>
         </div>
-        <p className="max-w-xl text-base leading-7 text-slate-600">
+        <p className="theme-body max-w-xl text-base leading-7">
           These entries are placeholders you can swap with your actual roles,
           dates, and responsibilities.
         </p>
       </div>
 
       <div className="mt-12 space-y-6">
-        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <article className="theme-card rounded-3xl border p-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <p className="theme-body text-sm font-semibold uppercase tracking-[0.18em]">
                 2023 - Present
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+              <h3 className="theme-heading mt-2 text-2xl font-semibold">
                 Senior Marketing Manager, North Star Tech
               </h3>
             </div>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-teal-700">
+            <p className="theme-accent text-sm font-medium uppercase tracking-[0.18em]">
               B2B SaaS
             </p>
           </div>
-          <p className="mt-5 max-w-3xl leading-7 text-slate-600">
+          <p className="theme-body mt-5 max-w-3xl leading-7">
             Led integrated campaigns, owned quarterly launch calendars, and
             partnered with sales leadership on pipeline and conversion goals.
           </p>
         </article>
 
-        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <article className="theme-card rounded-3xl border p-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <p className="theme-body text-sm font-semibold uppercase tracking-[0.18em]">
                 2020 - 2023
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+              <h3 className="theme-heading mt-2 text-2xl font-semibold">
                 Marketing Manager, Alder & Pine
               </h3>
             </div>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-teal-700">
+            <p className="theme-accent text-sm font-medium uppercase tracking-[0.18em]">
               Consumer Brand
             </p>
           </div>
-          <p className="mt-5 max-w-3xl leading-7 text-slate-600">
+          <p className="theme-body mt-5 max-w-3xl leading-7">
             Managed paid, social, email, and web content while coordinating
             agency partners and keeping reporting tied to business outcomes.
           </p>
         </article>
 
-        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <article className="theme-card rounded-3xl border p-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <p className="theme-body text-sm font-semibold uppercase tracking-[0.18em]">
                 2017 - 2020
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+              <h3 className="theme-heading mt-2 text-2xl font-semibold">
                 Content and Campaign Lead, Studio Common
               </h3>
             </div>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-teal-700">
+            <p className="theme-accent text-sm font-medium uppercase tracking-[0.18em]">
               Agency
             </p>
           </div>
-          <p className="mt-5 max-w-3xl leading-7 text-slate-600">
+          <p className="theme-body mt-5 max-w-3xl leading-7">
             Built campaign narratives, developed editorial calendars, and
             translated client goals into briefs, timelines, and performance
             summaries.
@@ -264,16 +264,16 @@ const Base = () => (
       </div>
     </section>
 
-    <section className="border-t border-slate-200 bg-slate-900 px-6 py-20 text-white lg:px-12">
+    <section className="theme-card-strong theme-divider border-t px-6 py-20 lg:px-12">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-300">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--theme-accent-warm)]">
             Contact
           </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
             Ready to turn this starter into your actual portfolio.
           </h2>
-          <p className="mt-5 text-lg leading-8 text-slate-300">
+          <p className="theme-card-strong-body mt-5 text-lg leading-8">
             Swap in your real numbers, add one or two strong case studies, and
             connect these buttons to your email, LinkedIn, resume, or Calendly.
           </p>
@@ -281,13 +281,13 @@ const Base = () => (
 
         <div className="flex flex-wrap gap-4">
           <a
-            className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-200"
+            className="theme-highlight rounded-full px-6 py-3 text-sm font-semibold transition hover:opacity-90"
             href="mailto:natasha@portfolio.com"
           >
             natasha@portfolio.com
           </a>
           <Link
-            className="rounded-full border border-slate-600 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
+            className="rounded-full border border-[color:var(--theme-accent-warm)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             href="/contact"
           >
             Contact Page

@@ -40,12 +40,12 @@ const SkillsPage = () => (
         {skillGroups.map((group) => (
           <article
             key={group.title}
-            className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
+            className="theme-card rounded-3xl border p-8"
           >
-            <h2 className="text-2xl font-semibold text-slate-900">
+            <h2 className="theme-heading text-2xl font-semibold">
               {group.title}
             </h2>
-            <ul className="mt-5 space-y-3 text-base leading-7 text-slate-600">
+            <ul className="theme-body mt-5 space-y-3 text-base leading-7">
               {group.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}

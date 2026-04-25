@@ -15,24 +15,24 @@ const ContactPage = () => (
     />
 
     <section className="mx-auto grid max-w-6xl gap-6 px-6 py-16 md:grid-cols-2 lg:px-12">
-      <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+      <article className="theme-card rounded-3xl border p-8">
+        <p className="theme-body text-sm font-semibold uppercase tracking-[0.18em]">
           Email
         </p>
         <a
           href="mailto:natasha@portfolio.com"
-          className="mt-4 block text-2xl font-semibold text-slate-900"
+          className="theme-heading mt-4 block text-2xl font-semibold"
         >
           natasha@portfolio.com
         </a>
-        <p className="mt-4 leading-7 text-slate-600">
+        <p className="theme-body mt-4 leading-7">
           Best for role inquiries, speaking requests, collaborations, or
           consulting conversations.
         </p>
       </article>
 
-      <article className="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-300">
+      <article className="theme-card-strong rounded-3xl border p-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--theme-accent-warm)]">
           Other Links
         </p>
         <div className="mt-4 space-y-4 text-lg">
@@ -43,7 +43,7 @@ const ContactPage = () => (
             Resume
           </Link>
         </div>
-        <p className="mt-6 leading-7 text-slate-300">
+        <p className="theme-card-strong-body mt-6 leading-7">
           Later, we can replace this block with a proper contact form, booking
           link, or downloadable resume asset.
         </p>
