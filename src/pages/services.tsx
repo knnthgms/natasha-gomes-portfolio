@@ -26,8 +26,8 @@ const services = [
 
 const ServicesPage = () => (
   <SiteLayout
-    title="Services | Jordan Lee"
-    description="Services page for a marketing manager portfolio."
+    title="Services | Natasha Gomes"
+    description="Services and marketing capabilities offered by Natasha Gomes."
   >
     <PageIntro
       eyebrow="Services"

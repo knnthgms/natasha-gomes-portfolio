@@ -26,8 +26,8 @@ const skillGroups = [
 
 const SkillsPage = () => (
   <SiteLayout
-    title="Skills | Jordan Lee"
-    description="Skills page for a marketing manager portfolio."
+    title="Skills | Natasha Gomes"
+    description="Marketing, strategy, and leadership skills for Natasha Gomes."
   >
     <PageIntro
       eyebrow="Skills"

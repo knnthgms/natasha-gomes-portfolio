@@ -1,7 +1,7 @@
 export const AppConfig = {
-  site_name: 'Jordan Lee Portfolio',
-  title: 'Jordan Lee | Marketing Manager Portfolio',
+  site_name: 'Natasha Gomes',
+  title: 'Natasha Gomes | Marketing Manager Portfolio',
   description:
-    'Portfolio starter for a marketing manager featuring campaign wins, capabilities, experience, and contact details.',
+    'Portfolio website for Natasha Gomes, a marketing manager focused on campaign strategy, content leadership, growth, and brand-building.',
   locale: 'en',
 };

@@ -3,8 +3,8 @@ import { SiteLayout } from '../templates/SiteLayout';
 
 const AboutPage = () => (
   <SiteLayout
-    title="About | Jordan Lee"
-    description="About page for a marketing manager portfolio."
+    title="About | Natasha Gomes"
+    description="About Natasha Gomes, marketing manager."
   >
     <PageIntro
       eyebrow="About"

@@ -5,8 +5,8 @@ import { SiteLayout } from '../templates/SiteLayout';
 
 const ContactPage = () => (
   <SiteLayout
-    title="Contact | Jordan Lee"
-    description="Contact page for a marketing manager portfolio."
+    title="Contact | Natasha Gomes"
+    description="Contact Natasha Gomes for marketing roles, consulting, or collaborations."
   >
     <PageIntro
       eyebrow="Contact"
@@ -20,10 +20,10 @@ const ContactPage = () => (
           Email
         </p>
         <a
-          href="mailto:jordan@portfolio.com"
+          href="mailto:natasha@portfolio.com"
           className="mt-4 block text-2xl font-semibold text-slate-900"
         >
-          jordan@portfolio.com
+          natasha@portfolio.com
         </a>
         <p className="mt-4 leading-7 text-slate-600">
           Best for role inquiries, speaking requests, collaborations, or

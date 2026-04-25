@@ -27,8 +27,8 @@ const roles = [
 
 const ExperiencePage = () => (
   <SiteLayout
-    title="Experience | Jordan Lee"
-    description="Experience page for a marketing manager portfolio."
+    title="Experience | Natasha Gomes"
+    description="Professional experience and career highlights for Natasha Gomes."
   >
     <PageIntro
       eyebrow="Experience"

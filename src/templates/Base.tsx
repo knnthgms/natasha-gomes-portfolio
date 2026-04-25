@@ -25,7 +25,7 @@ const Base = () => (
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
-                href="mailto:jordan@portfolio.com"
+                href="mailto:natasha@portfolio.com"
               >
                 Email Me
               </a>
@@ -282,9 +282,9 @@ const Base = () => (
         <div className="flex flex-wrap gap-4">
           <a
             className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-200"
-            href="mailto:jordan@portfolio.com"
+            href="mailto:natasha@portfolio.com"
           >
-            jordan@portfolio.com
+            natasha@portfolio.com
           </a>
           <Link
             className="rounded-full border border-slate-600 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
