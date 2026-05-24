@@ -1,3 +1,5 @@
+import { ThemedSection, ThemedText } from '../theme/Theme';
+
 type IPageIntroProps = {
   eyebrow: string;
   title: string;
@@ -5,19 +7,26 @@ type IPageIntroProps = {
 };
 
 const PageIntro = (props: IPageIntroProps) => (
-  <section className="theme-divider border-b">
+  <ThemedSection divider="bottom">
     <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12 lg:py-20">
-      <p className="theme-accent text-sm font-semibold uppercase tracking-[0.2em]">
+      <ThemedText
+        className="text-sm font-semibold uppercase tracking-[0.2em]"
+        variant="accent"
+      >
         {props.eyebrow}
-      </p>
-      <h1 className="theme-heading mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">
+      </ThemedText>
+      <ThemedText
+        as="h1"
+        className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl"
+        variant="heading"
+      >
         {props.title}
-      </h1>
-      <p className="theme-body mt-6 max-w-2xl text-lg leading-8">
+      </ThemedText>
+      <ThemedText className="mt-6 max-w-2xl text-lg leading-8" variant="body">
         {props.description}
-      </p>
+      </ThemedText>
     </div>
-  </section>
+  </ThemedSection>
 );
 
 export { PageIntro };

@@ -1,5 +1,6 @@
 import { PageIntro } from '../templates/PageIntro';
 import { SiteLayout } from '../templates/SiteLayout';
+import { ThemedSurface, ThemedText } from '../theme/Theme';
 
 const AboutPage = () => (
   <SiteLayout
@@ -13,7 +14,11 @@ const AboutPage = () => (
     />
 
     <section className="mx-auto grid max-w-6xl gap-8 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-12">
-      <div className="theme-body space-y-6 text-lg leading-8">
+      <ThemedText
+        as="div"
+        className="space-y-6 text-lg leading-8"
+        variant="body"
+      >
         <p>
           Start with a sharp summary of your background. For example: you build
           integrated marketing programs that combine strategy, content, demand
@@ -29,35 +34,54 @@ const AboutPage = () => (
           operating environments you know well, whether that is B2B SaaS,
           agency, startup, ecommerce, or something else.
         </p>
-      </div>
+      </ThemedText>
 
-      <div className="theme-card rounded-3xl border p-8">
-        <p className="theme-accent text-sm font-semibold uppercase tracking-[0.18em]">
+      <ThemedSurface className="p-8">
+        <ThemedText
+          className="text-sm font-semibold uppercase tracking-[0.18em]"
+          variant="accent"
+        >
           Quick Snapshot
-        </p>
-        <dl className="theme-body mt-6 space-y-5">
+        </ThemedText>
+        <ThemedText as="dl" className="mt-6 space-y-5" variant="body">
           <div>
-            <dt className="text-sm uppercase tracking-[0.18em]">Focus</dt>
-            <dd className="theme-heading mt-2 text-lg">
+            <ThemedText
+              as="dt"
+              className="text-sm uppercase tracking-[0.18em]"
+              variant="accent"
+            >
+              Focus
+            </ThemedText>
+            <ThemedText as="dd" className="mt-2 text-lg" variant="heading">
               Growth marketing, brand campaigns, and lifecycle strategy
-            </dd>
+            </ThemedText>
           </div>
           <div>
-            <dt className="text-sm uppercase tracking-[0.18em]">Strength</dt>
-            <dd className="theme-heading mt-2 text-lg">
+            <ThemedText
+              as="dt"
+              className="text-sm uppercase tracking-[0.18em]"
+              variant="accent"
+            >
+              Strength
+            </ThemedText>
+            <ThemedText as="dd" className="mt-2 text-lg" variant="heading">
               Turning messy goals into clear plans and measurable execution
-            </dd>
+            </ThemedText>
           </div>
           <div>
-            <dt className="text-sm uppercase tracking-[0.18em]">
+            <ThemedText
+              as="dt"
+              className="text-sm uppercase tracking-[0.18em]"
+              variant="accent"
+            >
               Collaboration
-            </dt>
-            <dd className="theme-heading mt-2 text-lg">
+            </ThemedText>
+            <ThemedText as="dd" className="mt-2 text-lg" variant="heading">
               Product, design, sales, leadership, and external partners
-            </dd>
+            </ThemedText>
           </div>
-        </dl>
-      </div>
+        </ThemedText>
+      </ThemedSurface>
     </section>
   </SiteLayout>
 );

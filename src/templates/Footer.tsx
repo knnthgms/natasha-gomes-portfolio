@@ -1,13 +1,17 @@
-import Link from 'next/link';
-
+import { ThemedNavLink, ThemedText, themeStyles } from '../theme/Theme';
 import { AppConfig } from '../utils/AppConfig';
 import { navigationItems } from './navigationItems';
 
 const Footer = () => (
-  <footer className="theme-footer border-t">
-    <div className="theme-body mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 text-sm lg:flex-row lg:items-center lg:justify-between lg:px-12">
+  <footer className="border-t" style={themeStyles.footer}>
+    <div
+      className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 text-sm lg:flex-row lg:items-center lg:justify-between lg:px-12"
+      style={themeStyles.body}
+    >
       <div>
-        <p className="theme-heading font-semibold">{AppConfig.site_name}</p>
+        <ThemedText className="font-semibold" variant="heading">
+          {AppConfig.site_name}
+        </ThemedText>
         <p className="mt-1">
           Marketing manager portfolio starter for experience, services, and
           future case studies.
@@ -16,13 +20,9 @@ const Footer = () => (
 
       <div className="flex flex-wrap gap-5">
         {navigationItems.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="theme-link transition"
-          >
+          <ThemedNavLink key={item.href} href={item.href}>
             {item.label}
-          </Link>
+          </ThemedNavLink>
         ))}
       </div>
     </div>
