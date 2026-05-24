@@ -1,3 +1,4 @@
+import { siteContent } from '../content/siteContent';
 import {
   ThemedButtonLink,
   ThemedSection,
@@ -6,6 +7,8 @@ import {
 } from '../theme/Theme';
 import { AppConfig } from '../utils/AppConfig';
 import { SiteLayout } from './SiteLayout';
+
+const { home } = siteContent;
 
 const Base = () => (
   <SiteLayout title={AppConfig.title} description={AppConfig.description}>
@@ -17,96 +20,59 @@ const Base = () => (
               className="text-sm font-semibold uppercase tracking-[0.2em]"
               variant="accent"
             >
-              Marketing Manager
+              {home.hero.eyebrow}
             </ThemedText>
             <ThemedText
               as="h2"
               className="mt-4 text-5xl font-semibold leading-tight tracking-tight md:text-6xl"
               variant="heading"
             >
-              Building growth programs that turn attention into revenue.
+              {home.hero.title}
             </ThemedText>
             <ThemedText
               className="mt-6 max-w-2xl text-lg leading-8"
               variant="body"
             >
-              Replace this copy with a concise positioning statement about the
-              kind of marketing work you lead. This starter is set up for
-              campaign strategy, content leadership, lifecycle marketing, and
-              cross-functional execution.
+              {home.hero.description}
             </ThemedText>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <ThemedButtonLink
                 className="rounded-full px-6 py-3 text-sm font-semibold transition"
-                href="mailto:natasha@portfolio.com"
+                href={home.hero.primaryAction.href}
               >
-                Email Me
+                {home.hero.primaryAction.label}
               </ThemedButtonLink>
               <ThemedButtonLink
                 className="rounded-full px-6 py-3 text-sm font-semibold transition"
-                href="/about"
+                href={home.hero.secondaryAction.href}
                 variant="secondary"
               >
-                Learn More
+                {home.hero.secondaryAction.label}
               </ThemedButtonLink>
             </div>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-            <ThemedSurface className="p-6">
-              <ThemedText
-                className="text-sm uppercase tracking-[0.18em]"
-                variant="body"
-              >
-                Pipeline Growth
-              </ThemedText>
-              <ThemedText
-                className="mt-4 text-4xl font-semibold"
-                variant="heading"
-              >
-                42%
-              </ThemedText>
-              <ThemedText className="mt-2 text-sm leading-6" variant="body">
-                YoY increase in qualified pipeline from integrated campaigns.
-              </ThemedText>
-            </ThemedSurface>
-            <ThemedSurface className="p-6">
-              <ThemedText
-                className="text-sm uppercase tracking-[0.18em]"
-                variant="body"
-              >
-                Launch Velocity
-              </ThemedText>
-              <ThemedText
-                className="mt-4 text-4xl font-semibold"
-                variant="heading"
-              >
-                18
-              </ThemedText>
-              <ThemedText className="mt-2 text-sm leading-6" variant="body">
-                Multi-channel launches led in one year across paid, email, and
-                web.
-              </ThemedText>
-            </ThemedSurface>
-            <ThemedSurface className="p-6">
-              <ThemedText
-                className="text-sm uppercase tracking-[0.18em]"
-                variant="body"
-              >
-                Team Leadership
-              </ThemedText>
-              <ThemedText
-                className="mt-4 text-4xl font-semibold"
-                variant="heading"
-              >
-                6
-              </ThemedText>
-              <ThemedText className="mt-2 text-sm leading-6" variant="body">
-                Internal and freelance contributors coordinated across creative
-                and ops.
-              </ThemedText>
-            </ThemedSurface>
+            {home.stats.map((stat) => (
+              <ThemedSurface key={stat.label} className="p-6">
+                <ThemedText
+                  className="text-sm uppercase tracking-[0.18em]"
+                  variant="body"
+                >
+                  {stat.label}
+                </ThemedText>
+                <ThemedText
+                  className="mt-4 text-4xl font-semibold"
+                  variant="heading"
+                >
+                  {stat.value}
+                </ThemedText>
+                <ThemedText className="mt-2 text-sm leading-6" variant="body">
+                  {stat.description}
+                </ThemedText>
+              </ThemedSurface>
+            ))}
           </div>
         </div>
       </div>
@@ -118,74 +84,50 @@ const Base = () => (
           className="text-sm font-semibold uppercase tracking-[0.2em]"
           variant="accent"
         >
-          Selected Wins
+          {home.selectedWins.eyebrow}
         </ThemedText>
         <ThemedText
           as="h2"
           className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl"
           variant="heading"
         >
-          A clean place to showcase outcomes, not just responsibilities.
+          {home.selectedWins.title}
         </ThemedText>
       </div>
 
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
-        <ThemedSurface as="article" className="p-8">
-          <ThemedText
-            className="text-sm font-semibold uppercase tracking-[0.18em]"
-            variant="body"
-          >
-            Demand Generation
-          </ThemedText>
-          <ThemedText
-            as="h3"
-            className="mt-4 text-2xl font-semibold"
-            variant="heading"
-          >
-            Rebuilt the campaign engine around audience intent.
-          </ThemedText>
-          <ThemedText className="mt-4 text-base leading-7" variant="body">
-            Use this card for a strong case-study summary: what changed, what
-            channels were involved, and what measurable business result came out
-            of it.
-          </ThemedText>
-        </ThemedSurface>
+        {home.selectedWins.items.map((item) => {
+          const isStrong = item.variant === 'strongCard';
 
-        <ThemedSurface as="article" className="p-8" variant="strongCard">
-          <ThemedText
-            className="text-sm font-semibold uppercase tracking-[0.18em]"
-            variant="warmAccent"
-          >
-            Brand Campaign
-          </ThemedText>
-          <h3 className="mt-4 text-2xl font-semibold">
-            Took a product launch from narrative to rollout.
-          </h3>
-          <ThemedText className="mt-4 text-base leading-7" variant="strongBody">
-            Highlight a launch you led across messaging, creative briefs,
-            stakeholder alignment, and post-launch reporting.
-          </ThemedText>
-        </ThemedSurface>
-
-        <ThemedSurface as="article" className="p-8">
-          <ThemedText
-            className="text-sm font-semibold uppercase tracking-[0.18em]"
-            variant="body"
-          >
-            Lifecycle Marketing
-          </ThemedText>
-          <ThemedText
-            as="h3"
-            className="mt-4 text-2xl font-semibold"
-            variant="heading"
-          >
-            Improved conversion by tightening nurture journeys.
-          </ThemedText>
-          <ThemedText className="mt-4 text-base leading-7" variant="body">
-            This is a good slot for email, retention, upsell, onboarding, or CRM
-            work that proves you can turn strategy into repeatable systems.
-          </ThemedText>
-        </ThemedSurface>
+          return (
+            <ThemedSurface
+              as="article"
+              className="p-8"
+              key={item.title}
+              variant={isStrong ? 'strongCard' : 'card'}
+            >
+              <ThemedText
+                className="text-sm font-semibold uppercase tracking-[0.18em]"
+                variant={isStrong ? 'warmAccent' : 'body'}
+              >
+                {item.label}
+              </ThemedText>
+              <ThemedText
+                as="h3"
+                className="mt-4 text-2xl font-semibold"
+                variant={isStrong ? 'strongHeading' : 'heading'}
+              >
+                {item.title}
+              </ThemedText>
+              <ThemedText
+                className="mt-4 text-base leading-7"
+                variant={isStrong ? 'strongBody' : 'body'}
+              >
+                {item.description}
+              </ThemedText>
+            </ThemedSurface>
+          );
+        })}
       </div>
     </section>
 
@@ -196,75 +138,35 @@ const Base = () => (
             className="text-sm font-semibold uppercase tracking-[0.2em]"
             variant="accent"
           >
-            Capabilities
+            {home.capabilities.eyebrow}
           </ThemedText>
           <ThemedText
             as="h2"
             className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl"
             variant="heading"
           >
-            Built for a marketing manager who works across strategy and
-            execution.
+            {home.capabilities.title}
           </ThemedText>
           <ThemedText className="mt-6 text-lg leading-8" variant="body">
-            Keep this section focused on the handful of strengths you want a
-            hiring manager or client to remember after a quick scan.
+            {home.capabilities.description}
           </ThemedText>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          <ThemedSurface className="p-6" variant="softCard">
-            <ThemedText
-              as="h3"
-              className="text-xl font-semibold"
-              variant="heading"
-            >
-              Campaign Strategy
-            </ThemedText>
-            <ThemedText className="mt-3 leading-7" variant="body">
-              Positioning, segmentation, messaging frameworks, launch planning,
-              and channel orchestration.
-            </ThemedText>
-          </ThemedSurface>
-          <ThemedSurface className="p-6" variant="softCard">
-            <ThemedText
-              as="h3"
-              className="text-xl font-semibold"
-              variant="heading"
-            >
-              Content Leadership
-            </ThemedText>
-            <ThemedText className="mt-3 leading-7" variant="body">
-              Editorial planning, copy direction, creative briefing, and content
-              performance reviews.
-            </ThemedText>
-          </ThemedSurface>
-          <ThemedSurface className="p-6" variant="softCard">
-            <ThemedText
-              as="h3"
-              className="text-xl font-semibold"
-              variant="heading"
-            >
-              Marketing Operations
-            </ThemedText>
-            <ThemedText className="mt-3 leading-7" variant="body">
-              Automation, reporting cadences, dashboard design, and cleaner
-              handoffs with sales and RevOps.
-            </ThemedText>
-          </ThemedSurface>
-          <ThemedSurface className="p-6" variant="softCard">
-            <ThemedText
-              as="h3"
-              className="text-xl font-semibold"
-              variant="heading"
-            >
-              Team Management
-            </ThemedText>
-            <ThemedText className="mt-3 leading-7" variant="body">
-              Managing agencies, freelancers, and internal partners without
-              losing speed or brand consistency.
-            </ThemedText>
-          </ThemedSurface>
+          {home.capabilities.items.map((item) => (
+            <ThemedSurface key={item.title} className="p-6" variant="softCard">
+              <ThemedText
+                as="h3"
+                className="text-xl font-semibold"
+                variant="heading"
+              >
+                {item.title}
+              </ThemedText>
+              <ThemedText className="mt-3 leading-7" variant="body">
+                {item.description}
+              </ThemedText>
+            </ThemedSurface>
+          ))}
         </div>
       </div>
     </ThemedSection>
@@ -276,114 +178,52 @@ const Base = () => (
             className="text-sm font-semibold uppercase tracking-[0.2em]"
             variant="accent"
           >
-            Experience Snapshot
+            {home.experienceSnapshot.eyebrow}
           </ThemedText>
           <ThemedText
             as="h2"
             className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl"
             variant="heading"
           >
-            Start with a simple timeline, then deepen it later with full case
-            studies.
+            {home.experienceSnapshot.title}
           </ThemedText>
         </div>
         <ThemedText className="max-w-xl text-base leading-7" variant="body">
-          These entries are placeholders you can swap with your actual roles,
-          dates, and responsibilities.
+          {home.experienceSnapshot.description}
         </ThemedText>
       </div>
 
       <div className="mt-12 space-y-6">
-        <ThemedSurface as="article" className="p-8">
-          <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-            <div>
+        {home.experienceSnapshot.roles.map((role) => (
+          <ThemedSurface as="article" className="p-8" key={role.title}>
+            <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+              <div>
+                <ThemedText
+                  className="text-sm font-semibold uppercase tracking-[0.18em]"
+                  variant="body"
+                >
+                  {role.years}
+                </ThemedText>
+                <ThemedText
+                  as="h3"
+                  className="mt-2 text-2xl font-semibold"
+                  variant="heading"
+                >
+                  {role.title}, {role.company}
+                </ThemedText>
+              </div>
               <ThemedText
-                className="text-sm font-semibold uppercase tracking-[0.18em]"
-                variant="body"
+                className="text-sm font-medium uppercase tracking-[0.18em]"
+                variant="accent"
               >
-                2023 - Present
-              </ThemedText>
-              <ThemedText
-                as="h3"
-                className="mt-2 text-2xl font-semibold"
-                variant="heading"
-              >
-                Senior Marketing Manager, North Star Tech
-              </ThemedText>
-            </div>
-            <ThemedText
-              className="text-sm font-medium uppercase tracking-[0.18em]"
-              variant="accent"
-            >
-              B2B SaaS
-            </ThemedText>
-          </div>
-          <ThemedText className="mt-5 max-w-3xl leading-7" variant="body">
-            Led integrated campaigns, owned quarterly launch calendars, and
-            partnered with sales leadership on pipeline and conversion goals.
-          </ThemedText>
-        </ThemedSurface>
-
-        <ThemedSurface as="article" className="p-8">
-          <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-            <div>
-              <ThemedText
-                className="text-sm font-semibold uppercase tracking-[0.18em]"
-                variant="body"
-              >
-                2020 - 2023
-              </ThemedText>
-              <ThemedText
-                as="h3"
-                className="mt-2 text-2xl font-semibold"
-                variant="heading"
-              >
-                Marketing Manager, Alder & Pine
+                {role.category}
               </ThemedText>
             </div>
-            <ThemedText
-              className="text-sm font-medium uppercase tracking-[0.18em]"
-              variant="accent"
-            >
-              Consumer Brand
+            <ThemedText className="mt-5 max-w-3xl leading-7" variant="body">
+              {role.summary}
             </ThemedText>
-          </div>
-          <ThemedText className="mt-5 max-w-3xl leading-7" variant="body">
-            Managed paid, social, email, and web content while coordinating
-            agency partners and keeping reporting tied to business outcomes.
-          </ThemedText>
-        </ThemedSurface>
-
-        <ThemedSurface as="article" className="p-8">
-          <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-            <div>
-              <ThemedText
-                className="text-sm font-semibold uppercase tracking-[0.18em]"
-                variant="body"
-              >
-                2017 - 2020
-              </ThemedText>
-              <ThemedText
-                as="h3"
-                className="mt-2 text-2xl font-semibold"
-                variant="heading"
-              >
-                Content and Campaign Lead, Studio Common
-              </ThemedText>
-            </div>
-            <ThemedText
-              className="text-sm font-medium uppercase tracking-[0.18em]"
-              variant="accent"
-            >
-              Agency
-            </ThemedText>
-          </div>
-          <ThemedText className="mt-5 max-w-3xl leading-7" variant="body">
-            Built campaign narratives, developed editorial calendars, and
-            translated client goals into briefs, timelines, and performance
-            summaries.
-          </ThemedText>
-        </ThemedSurface>
+          </ThemedSurface>
+        ))}
       </div>
     </section>
 
@@ -399,35 +239,34 @@ const Base = () => (
             className="text-sm font-semibold uppercase tracking-[0.2em]"
             variant="warmAccent"
           >
-            Contact
+            {home.contactCta.eyebrow}
           </ThemedText>
           <ThemedText
             as="h2"
             className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl"
             variant="strongHeading"
           >
-            Ready to turn this starter into your actual portfolio.
+            {home.contactCta.title}
           </ThemedText>
           <ThemedText className="mt-5 text-lg leading-8" variant="strongBody">
-            Swap in your real numbers, add one or two strong case studies, and
-            connect these buttons to your email, LinkedIn, resume, or Calendly.
+            {home.contactCta.description}
           </ThemedText>
         </div>
 
         <div className="flex flex-wrap gap-4">
           <ThemedButtonLink
             className="rounded-full px-6 py-3 text-sm font-semibold transition"
-            href="mailto:natasha@portfolio.com"
+            href={home.contactCta.primaryAction.href}
             variant="highlight"
           >
-            natasha@portfolio.com
+            {home.contactCta.primaryAction.label}
           </ThemedButtonLink>
           <ThemedButtonLink
             className="rounded-full px-6 py-3 text-sm font-semibold transition"
-            href="/contact"
+            href={home.contactCta.secondaryAction.href}
             variant="outline"
           >
-            Contact Page
+            {home.contactCta.secondaryAction.label}
           </ThemedButtonLink>
         </div>
       </div>

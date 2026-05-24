@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { siteContent } from '../content/siteContent';
 import { ThemedNavLink, ThemedText, themeStyles } from '../theme/Theme';
 import { AppConfig } from '../utils/AppConfig';
 import { navigationItems } from './navigationItems';
@@ -21,7 +22,7 @@ const Header = () => {
           </ThemedText>
         </Link>
 
-        <nav aria-label="Primary">
+        <nav aria-label={siteContent.accessibility.primaryNavigationLabel}>
           <ul
             className="flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium"
             style={themeStyles.body}

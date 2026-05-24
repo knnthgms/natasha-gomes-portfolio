@@ -1,9 +1,5 @@
-const navigationItems = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/experience', label: 'Experience' },
-  { href: '/contact', label: 'Contact' },
-];
+import { siteContent } from '../content/siteContent';
+
+const navigationItems = siteContent.navigation;
 
 export { navigationItems };

@@ -1,17 +1,20 @@
 import Link from 'next/link';
 
 import { Button } from '../button/Button';
+import { siteContent } from '../content/siteContent';
 import { CTABanner } from '../cta/CTABanner';
 import { Section } from '../layout/Section';
+
+const { banner } = siteContent.starterTemplates;
 
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
+      title={banner.title}
+      subtitle={banner.subtitle}
       button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
-          <Button>Get Started</Button>
+        <Link href={banner.action.href}>
+          <Button>{banner.action.label}</Button>
         </Link>
       }
     />

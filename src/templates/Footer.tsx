@@ -1,3 +1,4 @@
+import { siteContent } from '../content/siteContent';
 import { ThemedNavLink, ThemedText, themeStyles } from '../theme/Theme';
 import { AppConfig } from '../utils/AppConfig';
 import { navigationItems } from './navigationItems';
@@ -12,10 +13,7 @@ const Footer = () => (
         <ThemedText className="font-semibold" variant="heading">
           {AppConfig.site_name}
         </ThemedText>
-        <p className="mt-1">
-          Marketing manager portfolio starter for experience, services, and
-          future case studies.
-        </p>
+        <p className="mt-1">{siteContent.footer.description}</p>
       </div>
 
       <div className="flex flex-wrap gap-5">

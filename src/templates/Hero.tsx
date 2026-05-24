@@ -2,23 +2,23 @@ import Link from 'next/link';
 
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
+import { siteContent } from '../content/siteContent';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
+const { hero } = siteContent.starterTemplates;
+
 const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
-        </li>
+        {hero.navigation.map((item) => (
+          <li key={item.label}>
+            <Link href={item.href}>{item.label}</Link>
+          </li>
+        ))}
       </NavbarTwoColumns>
     </Section>
 
@@ -26,14 +26,14 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {hero.titleStart}
+            <span className="text-primary-500">{hero.titleAccent}</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description={hero.description}
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+          <Link href={hero.action.href}>
+            <Button xl>{hero.action.label}</Button>
           </Link>
         }
       />
