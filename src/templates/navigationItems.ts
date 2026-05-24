@@ -1,9 +1,8 @@
 const navigationItems = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
+  { href: '/projects', label: 'Projects' },
   { href: '/experience', label: 'Experience' },
-  { href: '/skills', label: 'Skills' },
   { href: '/contact', label: 'Contact' },
 ];
 
