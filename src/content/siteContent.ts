@@ -34,7 +34,7 @@ const siteContent = {
 
   footer: {
     description:
-      'Marketing manager portfolio starter for experience, services, and future case studies.',
+      'Product marketing portfolio for positioning, go-to-market, lifecycle, and growth work.',
   },
 
   accessibility: {
@@ -46,7 +46,7 @@ const siteContent = {
       eyebrow: 'Product Marketing Manager',
       title: 'Positioning products for growth, adoption, and revenue.',
       description:
-        'Replace this copy with a concise positioning statement about the product marketing work you lead. This starter is set up for positioning, go-to-market strategy, lifecycle marketing, campaign planning, and future growth roles.',
+        'Product marketing portfolio for positioning, go-to-market strategy, lifecycle marketing, campaign planning, and future growth roles.',
       primaryAction: {
         label: 'Email Me',
         href: 'mailto:natasha@portfolio.com',
@@ -137,7 +137,7 @@ const siteContent = {
       title:
         'Start with a simple timeline, then deepen it later with full case studies.',
       description:
-        'These entries are placeholders you can swap with your actual roles, dates, and responsibilities.',
+        'A concise view of roles, dates, and responsibilities across product marketing, growth, and campaign leadership.',
       roles: [
         {
           years: '2023 - Present',
@@ -167,9 +167,9 @@ const siteContent = {
     },
     contactCta: {
       eyebrow: 'Contact',
-      title: 'Ready to turn this starter into your actual portfolio.',
+      title: 'Ready to talk product marketing, launches, or growth.',
       description:
-        'Swap in your real numbers, add one or two strong case studies, and connect these buttons to your email, LinkedIn, resume, or Calendly.',
+        'Reach out for product marketing roles, growth opportunities, consulting, or collaborations.',
       primaryAction: {
         label: 'natasha@portfolio.com',
         href: 'mailto:natasha@portfolio.com',
@@ -237,7 +237,7 @@ const siteContent = {
         label: 'Demand Generation',
         title: 'Rebuilt a campaign engine around audience intent.',
         description:
-          'A placeholder case study for integrated campaign planning, channel coordination, and pipeline-focused reporting.',
+          'A case study for integrated campaign planning, channel coordination, and pipeline-focused reporting.',
         outcome: '42% qualified pipeline growth',
       },
       {
@@ -305,7 +305,7 @@ const siteContent = {
       eyebrow: 'Contact',
       title: 'Make it easy for the right opportunity to reach you.',
       description:
-        'For now, this can stay simple: email, LinkedIn, resume, and a short note on what kinds of roles or projects you are open to.',
+        'For product marketing roles, growth opportunities, consulting, or collaborations, email directly or connect through the links below.',
     },
     emailCard: {
       label: 'Email',
@@ -316,7 +316,7 @@ const siteContent = {
     linkCard: {
       label: 'Other Links',
       description:
-        'Later, we can replace this block with a proper contact form, booking link, or downloadable resume asset.',
+        'Use these links for professional background, resume details, and current availability.',
       links: [
         {
           label: 'LinkedIn',
@@ -327,104 +327,6 @@ const siteContent = {
           href: '/',
         },
       ],
-    },
-  },
-
-  starterTemplates: {
-    banner: {
-      title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      subtitle: 'Start your Free Trial.',
-      action: {
-        label: 'Get Started',
-        href: 'https://creativedesignsguru.com/category/nextjs/',
-      },
-    },
-    verticalFeatures: {
-      title: 'Your title here',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at.',
-      items: [
-        {
-          title: 'Your title here',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim.',
-          image: '/assets/images/feature.svg',
-          imageAlt: 'First feature alt text',
-          reverse: false,
-        },
-        {
-          title: 'Your title here',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim.',
-          image: '/assets/images/feature2.svg',
-          imageAlt: 'Second feature alt text',
-          reverse: true,
-        },
-        {
-          title: 'Your title here',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim.',
-          image: '/assets/images/feature3.svg',
-          imageAlt: 'Third feature alt text',
-          reverse: false,
-        },
-      ],
-    },
-    sponsors: {
-      title: 'Sponsors',
-      description:
-        "Our sponsors' exceptional support has made this project possible.",
-      items: [
-        {
-          href: 'https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate',
-          image: '/assets/images/clerk-logo-dark.png',
-          imageAlt: 'Clerk - Authentication & User Management for Next.js',
-        },
-        {
-          href: 'https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025',
-          image: '/assets/images/coderabbit-logo-light.svg',
-          imageAlt: 'CodeRabbit',
-        },
-        {
-          href: 'https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo',
-          image: '/assets/images/sentry-dark.png',
-          imageAlt: 'Sentry',
-        },
-        {
-          href: 'https://launch.arcjet.com/Q6eLbRE',
-          image: '/assets/images/arcjet-light.svg',
-          imageAlt: 'Arcjet',
-        },
-        {
-          href: 'https://l.crowdin.com/next-js',
-          image: '/assets/images/crowdin-dark.png',
-          imageAlt: 'Better Stack',
-        },
-        {
-          href: 'https://nextjs-boilerplate.com/pro-saas-starter-kit',
-          image: '/assets/images/nextjs-boilerplate-saas.png',
-          imageAlt: 'Next.js Boilerplate SaaS',
-        },
-      ],
-    },
-    hero: {
-      navigation: [
-        {
-          label: 'GitHub',
-          href: 'https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template',
-        },
-        {
-          label: 'Sign in',
-          href: '/',
-        },
-      ],
-      titleStart: 'The modern landing page for\n',
-      titleAccent: 'React developers',
-      description: 'The easiest way to build a React landing page in seconds.',
-      action: {
-        label: 'Download Your Free Theme',
-        href: 'https://creativedesignsguru.com/category/nextjs/',
-      },
     },
   },
 } as const;
