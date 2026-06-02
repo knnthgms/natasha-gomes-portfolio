@@ -1,11 +1,27 @@
 const siteContent = {
   site: {
     name: 'Natasha Gomes',
-    title: 'Natasha Gomes | Marketing Manager Portfolio',
+    url: 'https://natashagomes.com',
+    title: 'Natasha Gomes | Product Marketing Manager Portfolio',
     description:
-      'Portfolio website for Natasha Gomes, a marketing manager focused on campaign strategy, content leadership, growth, and brand-building.',
+      'Portfolio website for Natasha Gomes, a product marketing manager focused on positioning, go-to-market strategy, lifecycle marketing, and future growth roles.',
     locale: 'en',
     email: 'natasha@portfolio.com',
+    currentRole: 'Product Marketing Manager',
+    targetRoles: [
+      'Product Marketing Manager',
+      'Growth Marketing Manager',
+      'Lifecycle Marketing Manager',
+      'Go-to-Market Manager',
+    ],
+    searchFocus: [
+      'product marketing',
+      'growth marketing',
+      'go-to-market strategy',
+      'positioning',
+      'lifecycle marketing',
+      'campaign strategy',
+    ],
   },
 
   navigation: [
@@ -27,10 +43,10 @@ const siteContent = {
 
   home: {
     hero: {
-      eyebrow: 'Marketing Manager',
-      title: 'Building growth programs that turn attention into revenue.',
+      eyebrow: 'Product Marketing Manager',
+      title: 'Positioning products for growth, adoption, and revenue.',
       description:
-        'Replace this copy with a concise positioning statement about the kind of marketing work you lead. This starter is set up for campaign strategy, content leadership, lifecycle marketing, and cross-functional execution.',
+        'Replace this copy with a concise positioning statement about the product marketing work you lead. This starter is set up for positioning, go-to-market strategy, lifecycle marketing, campaign planning, and future growth roles.',
       primaryAction: {
         label: 'Email Me',
         href: 'mailto:natasha@portfolio.com',
@@ -90,24 +106,24 @@ const siteContent = {
     capabilities: {
       eyebrow: 'Capabilities',
       title:
-        'Built for a marketing manager who works across strategy and execution.',
+        'Built for a product marketing manager who works across strategy, launch, and growth.',
       description:
-        'Keep this section focused on the handful of strengths you want a hiring manager or client to remember after a quick scan.',
+        'Keep this section focused on the handful of product marketing and growth strengths you want a hiring manager or client to remember after a quick scan.',
       items: [
         {
-          title: 'Campaign Strategy',
+          title: 'Positioning and Messaging',
           description:
-            'Positioning, segmentation, messaging frameworks, launch planning, and channel orchestration.',
+            'Audience research, segmentation, value propositions, message testing, and product narrative development.',
         },
         {
-          title: 'Content Leadership',
+          title: 'Go-to-Market Strategy',
           description:
-            'Editorial planning, copy direction, creative briefing, and content performance reviews.',
+            'Launch planning, channel orchestration, sales enablement, stakeholder alignment, and post-launch reporting.',
         },
         {
-          title: 'Marketing Operations',
+          title: 'Growth Marketing',
           description:
-            'Automation, reporting cadences, dashboard design, and cleaner handoffs with sales and RevOps.',
+            'Lifecycle campaigns, funnel optimization, experimentation, retention programs, and revenue-focused reporting.',
         },
         {
           title: 'Team Management',
@@ -125,19 +141,19 @@ const siteContent = {
       roles: [
         {
           years: '2023 - Present',
-          title: 'Senior Marketing Manager',
+          title: 'Product Marketing Manager',
           company: 'North Star Tech',
           category: 'B2B SaaS',
           summary:
-            'Led integrated campaigns, owned quarterly launch calendars, and partnered with sales leadership on pipeline and conversion goals.',
+            'Led positioning, go-to-market planning, launch calendars, and sales alignment for product adoption and pipeline goals.',
         },
         {
           years: '2020 - 2023',
-          title: 'Marketing Manager',
+          title: 'Growth Marketing Manager',
           company: 'Alder & Pine',
           category: 'Consumer Brand',
           summary:
-            'Managed paid, social, email, and web content while coordinating agency partners and keeping reporting tied to business outcomes.',
+            'Managed acquisition, lifecycle, email, and web campaigns while coordinating agency partners and tying reporting to growth outcomes.',
         },
         {
           years: '2017 - 2020',
@@ -168,18 +184,19 @@ const siteContent = {
   about: {
     meta: {
       title: 'About | Natasha Gomes',
-      description: 'About Natasha Gomes, marketing manager.',
+      description:
+        'About Natasha Gomes, product marketing manager focused on positioning, go-to-market strategy, and growth.',
     },
     intro: {
       eyebrow: 'About',
       title:
-        'A space to explain your perspective, leadership style, and marketing range.',
+        'A space to explain your product marketing perspective, leadership style, and growth range.',
       description:
-        'This page is where you can sound like a person, not just a resume. Use it to connect your career story, decision-making style, and the kinds of teams or brands you do your best work with.',
+        'This page is where you can sound like a person, not just a resume. Use it to connect your career story, product marketing approach, decision-making style, and the kinds of teams or brands you do your best work with.',
     },
     paragraphs: [
-      'Start with a sharp summary of your background. For example: you build integrated marketing programs that combine strategy, content, demand generation, and performance reporting.',
-      'Then add your point of view. Talk about how you approach positioning, how you work cross-functionally, and how you keep marketing tied to business outcomes instead of vanity metrics.',
+      'Start with a sharp summary of your background. For example: you build product marketing programs that combine positioning, go-to-market strategy, lifecycle campaigns, demand generation, and performance reporting.',
+      'Then add your point of view. Talk about how you approach product positioning, how you work cross-functionally, and how you keep marketing tied to adoption, pipeline, retention, and revenue instead of vanity metrics.',
       'This is also a good place to mention industries, team sizes, or operating environments you know well, whether that is B2B SaaS, agency, startup, ecommerce, or something else.',
     ],
     snapshot: {
@@ -187,7 +204,8 @@ const siteContent = {
       items: [
         {
           label: 'Focus',
-          value: 'Growth marketing, brand campaigns, and lifecycle strategy',
+          value:
+            'Product marketing, go-to-market strategy, growth marketing, and lifecycle strategy',
         },
         {
           label: 'Strength',
@@ -206,7 +224,7 @@ const siteContent = {
     meta: {
       title: 'Projects | Natasha Gomes',
       description:
-        'Selected marketing projects and case studies by Natasha Gomes.',
+        'Selected product marketing, go-to-market, and growth marketing projects by Natasha Gomes.',
     },
     intro: {
       eyebrow: 'Projects',
@@ -224,7 +242,7 @@ const siteContent = {
       },
       {
         label: 'Product Launch',
-        title: 'Took a launch from positioning to rollout.',
+        title: 'Took a product launch from positioning to rollout.',
         description:
           'Use this project to show messaging, stakeholder alignment, creative briefing, and post-launch performance analysis.',
         outcome: '18 multi-channel launches',
@@ -243,7 +261,7 @@ const siteContent = {
     meta: {
       title: 'Experience | Natasha Gomes',
       description:
-        'Professional experience and career highlights for Natasha Gomes.',
+        'Product marketing, growth marketing, and go-to-market experience for Natasha Gomes.',
     },
     intro: {
       eyebrow: 'Experience',
@@ -255,14 +273,14 @@ const siteContent = {
     roles: [
       {
         years: '2023 - Present',
-        title: 'Senior Marketing Manager',
+        title: 'Product Marketing Manager',
         company: 'North Star Tech',
         summary:
-          'Owns integrated campaign strategy, quarterly launches, sales alignment, and revenue reporting.',
+          'Owns product positioning, integrated launch strategy, sales alignment, lifecycle campaigns, and revenue reporting.',
       },
       {
         years: '2020 - 2023',
-        title: 'Marketing Manager',
+        title: 'Growth Marketing Manager',
         company: 'Alder & Pine',
         summary:
           'Led paid, content, social, and lifecycle programs with agency and internal team coordination.',
@@ -281,7 +299,7 @@ const siteContent = {
     meta: {
       title: 'Contact | Natasha Gomes',
       description:
-        'Contact Natasha Gomes for marketing roles, consulting, or collaborations.',
+        'Contact Natasha Gomes for product marketing, growth marketing, go-to-market, consulting, or collaboration opportunities.',
     },
     intro: {
       eyebrow: 'Contact',

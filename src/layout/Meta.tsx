@@ -12,6 +12,23 @@ type IMetaProps = {
 
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
+  const pathWithoutQuery = router.asPath.split(/[?#]/)[0] || '/';
+  const canonicalPath =
+    pathWithoutQuery === '/' ? '/' : `${pathWithoutQuery.replace(/\/$/, '')}/`;
+  const canonical = props.canonical ?? `${AppConfig.site_url}${canonicalPath}`;
+  const personJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: AppConfig.site_name,
+    url: AppConfig.site_url,
+    email: `mailto:${AppConfig.email}`,
+    jobTitle: AppConfig.current_role,
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: AppConfig.current_role,
+    },
+    knowsAbout: [...AppConfig.search_focus, ...AppConfig.target_roles],
+  };
 
   return (
     <>
@@ -46,17 +63,23 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
       </Head>
       <NextSeo
         title={props.title}
         description={props.description}
-        canonical={props.canonical}
+        canonical={canonical}
         openGraph={{
           title: props.title,
           description: props.description,
-          url: props.canonical,
+          url: canonical,
           locale: AppConfig.locale,
           site_name: AppConfig.site_name,
+          type: 'website',
         }}
       />
     </>

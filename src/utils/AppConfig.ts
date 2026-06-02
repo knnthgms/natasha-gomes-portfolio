@@ -21,9 +21,14 @@ type ThemeConfig = {
 
 export const AppConfig = {
   site_name: siteContent.site.name,
+  site_url: siteContent.site.url,
   title: siteContent.site.title,
   description: siteContent.site.description,
   locale: siteContent.site.locale,
+  email: siteContent.site.email,
+  current_role: siteContent.site.currentRole,
+  target_roles: siteContent.site.targetRoles,
+  search_focus: siteContent.site.searchFocus,
   theme: {
     background: '#f9f9f9',
     backgroundSoft: '#e0f4f2',
