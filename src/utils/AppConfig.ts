@@ -35,7 +35,7 @@ export const AppConfig = {
     backgroundMuted: '#e2e2e2',
     surface: '#ffffff',
     surfaceAlt: '#f3f3f4',
-    surfaceStrong: '#004860',
+    surfaceStrong: '#fff4fb',
     border: '#006180',
     text: '#1a2e35',
     textMuted: '#40484d',

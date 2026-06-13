@@ -46,15 +46,11 @@ const ContactPage = () => (
         <div className="mt-4 space-y-4 text-lg">
           {contact.linkCard.links.map((link) =>
             link.href.startsWith('/') ? (
-              <Link
-                key={link.label}
-                className="block text-white"
-                href={link.href}
-              >
+              <Link key={link.label} className="block" href={link.href}>
                 {link.label}
               </Link>
             ) : (
-              <a key={link.label} className="block text-white" href={link.href}>
+              <a key={link.label} className="block" href={link.href}>
                 {link.label}
               </a>
             ),

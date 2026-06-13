@@ -59,7 +59,7 @@ const themeStyles = {
     letterSpacing: 0,
   },
   strongHeading: {
-    color: 'var(--theme-text-soft)',
+    color: 'var(--theme-text)',
     fontFamily: 'Quicksand, "Plus Jakarta Sans", sans-serif',
     letterSpacing: 0,
   },
@@ -75,11 +75,16 @@ const themeStyles = {
   },
   strongBody: {
     color:
-      'color-mix(in srgb, var(--theme-text-soft) 82%, var(--theme-accent-soft) 18%)',
+      'color-mix(in srgb, var(--theme-text-muted) 86%, var(--theme-accent-warm) 14%)',
   },
   highlight: {
     background:
-      'linear-gradient(transparent 34%, var(--theme-selection) 34% 86%, transparent 86%)',
+      'linear-gradient(135deg, color-mix(in srgb, var(--theme-selection) 84%, white 16%), color-mix(in srgb, var(--theme-accent-warm-soft) 58%, white 42%))',
+    border:
+      '1px solid color-mix(in srgb, var(--theme-accent-warm) 28%, white 72%)',
+    boxDecorationBreak: 'clone',
+    boxShadow:
+      'inset 0 -1px 0 color-mix(in srgb, var(--theme-accent-warm) 18%, transparent)',
     color: 'var(--theme-text)',
   },
   card: {
@@ -102,11 +107,20 @@ const themeStyles = {
   },
   strongCard: {
     background: 'var(--theme-surface-strong)',
-    borderColor: 'var(--theme-surface-strong)',
+    borderColor: 'color-mix(in srgb, var(--theme-accent-warm) 32%, white 68%)',
     borderRadius: '1rem',
     borderStyle: 'solid',
     borderWidth: 2,
-    boxShadow: '8px 8px 0 var(--theme-accent-warm-soft)',
+    boxShadow:
+      '8px 8px 0 color-mix(in srgb, var(--theme-accent-warm-soft) 74%, white 26%)',
+    color: 'var(--theme-text)',
+  },
+  highlightButton: {
+    background:
+      'linear-gradient(135deg, var(--theme-accent-warm), color-mix(in srgb, var(--theme-accent) 72%, var(--theme-accent-warm) 28%))',
+    border:
+      '2px solid color-mix(in srgb, var(--theme-accent-warm) 70%, var(--theme-accent-strong) 30%)',
+    boxShadow: '4px 4px 0 var(--theme-accent-warm-soft)',
     color: 'var(--theme-text-soft)',
   },
   primaryButton: {
@@ -203,7 +217,7 @@ const surfaceStyles: Record<SurfaceVariant, CSSProperties> = {
 };
 
 const buttonStyles = {
-  highlight: themeStyles.highlight,
+  highlight: themeStyles.highlightButton,
   outline: themeStyles.outlineButton,
   primary: themeStyles.primaryButton,
   secondary: themeStyles.secondaryButton,
@@ -214,7 +228,9 @@ const buttonHoverStyles: Record<
   CSSProperties
 > = {
   highlight: {
-    opacity: 0.9,
+    boxShadow: '3px 3px 0 var(--theme-accent-warm-soft)',
+    filter: 'saturate(1.08)',
+    transform: 'translate(1px, 1px)',
   },
   outline: {
     background: 'rgba(255, 255, 255, 0.1)',

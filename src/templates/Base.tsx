@@ -264,7 +264,7 @@ const Base = () => (
           <ThemedButtonLink
             className="rounded-full px-6 py-3 text-sm font-semibold transition"
             href={home.contactCta.secondaryAction.href}
-            variant="outline"
+            variant="secondary"
           >
             {home.contactCta.secondaryAction.label}
           </ThemedButtonLink>
