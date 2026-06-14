@@ -1,26 +1,34 @@
+// =============================================================================
+// WEBSITE CONTENT — edit the text inside the quotes to update the live site.
+// New to this? Read EDITING-GUIDE.md in this same folder first.
+//
+// Quick rules: only change text inside 'quotes', keep the comma at the end of
+// each line, and don't rename the words before a colon (title:, label:, href:).
+// =============================================================================
+
 const siteContent = {
   site: {
     name: 'Natasha Gomes',
-    url: 'https://natashagomes.com',
-    title: 'Natasha Gomes | Product Marketing Manager Portfolio',
+    url: 'https://www.natashagomes.com',
+    title: 'Natasha Gomes | Product Marketing & Communications',
     description:
-      'Portfolio website for Natasha Gomes, a product marketing manager focused on positioning, go-to-market strategy, lifecycle marketing, and future growth roles.',
+      'Portfolio of Natasha Gomes — a product marketing and communications leader with 11 years across SaaS go-to-market, brand, demand generation, and corporate communications.',
     locale: 'en',
-    email: 'natasha@portfolio.com',
+    email: 'natashagomes2202@gmail.com',
     currentRole: 'Product Marketing Manager',
     targetRoles: [
       'Product Marketing Manager',
+      'Go-to-Market Strategist',
+      'Marketing & Communications Manager',
       'Growth Marketing Manager',
-      'Lifecycle Marketing Manager',
-      'Go-to-Market Manager',
     ],
     searchFocus: [
       'product marketing',
-      'growth marketing',
       'go-to-market strategy',
-      'positioning',
-      'lifecycle marketing',
-      'campaign strategy',
+      'SaaS marketing',
+      'corporate communications',
+      'brand and content marketing',
+      'demand generation',
     ],
   },
 
@@ -34,7 +42,7 @@ const siteContent = {
 
   footer: {
     description:
-      'Product marketing portfolio for positioning, go-to-market, lifecycle, and growth work.',
+      'Product marketing and communications leader specializing in SaaS go-to-market, brand, content, and corporate communications.',
   },
 
   accessibility: {
@@ -43,136 +51,138 @@ const siteContent = {
 
   home: {
     hero: {
-      eyebrow: 'Product Marketing Manager',
-      title: 'Positioning products for growth, adoption, and revenue.',
+      eyebrow: 'Product Marketing Manager · SaaS & GTM',
+      title: "Marketing that's measurable, not just creative.",
       description:
-        'Product marketing portfolio for positioning, go-to-market strategy, lifecycle marketing, campaign planning, and future growth roles.',
+        "I'm Natasha Gomes — a product marketing and communications leader with 11 years building go-to-market strategy, brand, and demand for B2B and B2C. Most recently I built the GTM engine for 42Signals, a B2B SaaS product, from the ground up.",
       primaryAction: {
-        label: 'Email Me',
-        href: 'mailto:natasha@portfolio.com',
+        label: 'Get in Touch',
+        href: 'mailto:natashagomes2202@gmail.com',
       },
       secondaryAction: {
-        label: 'Learn More',
-        href: '/about',
+        label: 'Download Resume',
+        href: '/resume.pdf',
+      },
+      image: {
+        src: '/hero-photo.jpeg',
+        alt: 'Natasha Gomes',
       },
     },
     stats: [
       {
-        label: 'Pipeline Growth',
-        value: '42%',
+        label: 'Experience',
+        value: '11 yrs',
         description:
-          'YoY increase in qualified pipeline from integrated campaigns.',
+          'Across marketing and communications since 2015, spanning SaaS, aviation, and contracting.',
       },
       {
-        label: 'Launch Velocity',
-        value: '18',
+        label: 'SaaS Revenue',
+        value: '$0 to $12K MRR',
         description:
-          'Multi-channel launches led in one year across paid, email, and web.',
+          "Built 42Signals' inbound pipeline and revenue from scratch as the founding product marketer.",
       },
       {
-        label: 'Team Leadership',
-        value: '6',
+        label: 'Organic Reach',
+        value: '17K to 93K',
         description:
-          'Internal and freelance contributors coordinated across creative and ops.',
+          'Grew social following organically across seven brands at ECC Group.',
       },
     ],
     selectedWins: {
       eyebrow: 'Selected Wins',
-      title: 'A clean place to showcase outcomes, not just responsibilities.',
+      title: 'Outcomes, not just responsibilities.',
       items: [
         {
-          label: 'Demand Generation',
-          title: 'Rebuilt the campaign engine around audience intent.',
+          label: 'SaaS Go-to-Market',
+          title: "Built 42Signals' GTM engine from zero.",
           description:
-            'Use this card for a strong case-study summary: what changed, what channels were involved, and what measurable business result came out of it.',
+            'Owned category creation, positioning, messaging, and multi-channel campaigns — scaling a new B2B SaaS product from $0 to $12K MRR through a fully inbound pipeline.',
           variant: 'card',
         },
         {
-          label: 'Brand Campaign',
-          title: 'Took a product launch from narrative to rollout.',
+          label: 'Brand & Events',
+          title: 'Ran an aviation security event for 700+ delegates.',
           description:
-            'Highlight a launch you led across messaging, creative briefs, stakeholder alignment, and post-launch reporting.',
+            "Led content, branding, partnerships, and end-to-end execution for one of the region's largest aviation security events at Emirates Group.",
           variant: 'strongCard',
         },
         {
-          label: 'Lifecycle Marketing',
-          title: 'Improved conversion by tightening nurture journeys.',
+          label: 'Social & PR',
+          title: 'Grew organic reach from 17K to 93K.',
           description:
-            'This is a good slot for email, retention, upsell, onboarding, or CRM work that proves you can turn strategy into repeatable systems.',
+            'Headed social and PR for seven companies at ECC Group, owning media presence, content strategy, and C-level communications.',
           variant: 'card',
         },
       ],
     },
     capabilities: {
       eyebrow: 'Capabilities',
-      title:
-        'Built for a product marketing manager who works across strategy, launch, and growth.',
+      title: 'A product marketer who works across strategy, story, and growth.',
       description:
-        'Keep this section focused on the handful of product marketing and growth strengths you want a hiring manager or client to remember after a quick scan.',
+        'I connect positioning and brand to pipeline and revenue — across SaaS go-to-market, corporate and internal communications, content, and events.',
       items: [
         {
-          title: 'Positioning and Messaging',
+          title: 'Go-to-Market & Positioning',
           description:
-            'Audience research, segmentation, value propositions, message testing, and product narrative development.',
+            'Category creation, positioning, messaging, and launch planning for B2B and B2C products.',
         },
         {
-          title: 'Go-to-Market Strategy',
+          title: 'Demand & Content',
           description:
-            'Launch planning, channel orchestration, sales enablement, stakeholder alignment, and post-launch reporting.',
+            'SEO, content marketing, email nurture, partnerships, and referral channels that build inbound pipeline.',
         },
         {
-          title: 'Growth Marketing',
+          title: 'Corporate & Internal Comms',
           description:
-            'Lifecycle campaigns, funnel optimization, experimentation, retention programs, and revenue-focused reporting.',
+            'Media relations, C-level communications, PR, internal magazines, and two-way employee channels.',
         },
         {
-          title: 'Team Management',
+          title: 'Brand, Events & Team',
           description:
-            'Managing agencies, freelancers, and internal partners without losing speed or brand consistency.',
+            'Employer branding, large-scale events, creative direction, and leading internal and agency teams.',
         },
       ],
     },
     experienceSnapshot: {
       eyebrow: 'Experience Snapshot',
-      title:
-        'Start with a simple timeline, then deepen it later with full case studies.',
+      title: 'Eleven years across SaaS, communications, and brand.',
       description:
-        'A concise view of roles, dates, and responsibilities across product marketing, growth, and campaign leadership.',
+        'A concise view of recent roles. The full timeline lives on the Experience page.',
       roles: [
         {
-          years: '2023 - Present',
+          years: '2022 - Present',
           title: 'Product Marketing Manager',
-          company: 'North Star Tech',
+          company: 'PromptCloud (42Signals)',
           category: 'B2B SaaS',
           summary:
-            'Led positioning, go-to-market planning, launch calendars, and sales alignment for product adoption and pipeline goals.',
+            'Founding product marketer for 42Signals — category creation, full GTM strategy, SEO, content, and internal communications.',
         },
         {
-          years: '2020 - 2023',
-          title: 'Growth Marketing Manager',
-          company: 'Alder & Pine',
-          category: 'Consumer Brand',
+          years: '2020 - 2022',
+          title: 'Associate Marketing & Communications Manager',
+          company: 'Emirates Group',
+          category: 'Aviation',
           summary:
-            'Managed acquisition, lifecycle, email, and web campaigns while coordinating agency partners and tying reporting to growth outcomes.',
+            'Led internal and external communications, multi-channel marketing, and large-scale corporate events including a 700+ delegate aviation security summit.',
         },
         {
           years: '2017 - 2020',
-          title: 'Content and Campaign Lead',
-          company: 'Studio Common',
-          category: 'Agency',
+          title: 'Digital Marketing, Comms & PR Executive',
+          company: 'ECC Group',
+          category: 'Contracting',
           summary:
-            'Built campaign narratives, developed editorial calendars, and translated client goals into briefs, timelines, and performance summaries.',
+            'Headed social and PR for seven group companies, growing organic following from 17K to 93K and managing full media presence.',
         },
       ],
     },
     contactCta: {
       eyebrow: 'Contact',
-      title: 'Ready to talk product marketing, launches, or growth.',
+      title: "Let's talk product marketing, GTM, or communications.",
       description:
-        'Reach out for product marketing roles, growth opportunities, consulting, or collaborations.',
+        'Open to product marketing and communications roles, consulting, and collaborations. Based in Bengaluru, working with global teams.',
       primaryAction: {
-        label: 'natasha@portfolio.com',
-        href: 'mailto:natasha@portfolio.com',
+        label: 'natashagomes2202@gmail.com',
+        href: 'mailto:natashagomes2202@gmail.com',
       },
       secondaryAction: {
         label: 'Contact Page',
@@ -185,19 +195,19 @@ const siteContent = {
     meta: {
       title: 'About | Natasha Gomes',
       description:
-        'About Natasha Gomes, product marketing manager focused on positioning, go-to-market strategy, and growth.',
+        'About Natasha Gomes — product marketing and communications leader across SaaS go-to-market, brand, and corporate communications.',
     },
     intro: {
       eyebrow: 'About',
-      title:
-        'A space to explain your product marketing perspective, leadership style, and growth range.',
+      title: "The best marketing isn't just creative — it's measurable.",
       description:
-        'This page is where you can sound like a person, not just a resume. Use it to connect your career story, product marketing approach, decision-making style, and the kinds of teams or brands you do your best work with.',
+        "I'm a product marketing and communications leader based in Bengaluru, with 11 years across SaaS, aviation, contracting, and sustainability.",
     },
     paragraphs: [
-      'Start with a sharp summary of your background. For example: you build product marketing programs that combine positioning, go-to-market strategy, lifecycle campaigns, demand generation, and performance reporting.',
-      'Then add your point of view. Talk about how you approach product positioning, how you work cross-functionally, and how you keep marketing tied to adoption, pipeline, retention, and revenue instead of vanity metrics.',
-      'This is also a good place to mention industries, team sizes, or operating environments you know well, whether that is B2B SaaS, agency, startup, ecommerce, or something else.',
+      "I've worked in marketing and communications since 2015. Most recently, I've led product marketing for 42Signals, a B2B SaaS product at PromptCloud, where I built the go-to-market strategy from the ground up — category creation, positioning, messaging, and multi-channel campaigns.",
+      'I bring in global enterprise and big-brand clients through a mix of content marketing, SEO, partnerships, and referral channels — scaling 42Signals from $0 to $12K MRR and lifting its domain authority from 18 to 28.',
+      'Before SaaS, I spent years in corporate communications at Emirates Group, managing media presence, C-level communications, and large-scale international events, plus marketing roles across healthcare, contracting, and sustainability.',
+      "Internal communications is something I'm equally passionate about. I've built org-wide programs, internal magazines, AMA sessions, and two-way channels that help companies build cultures people actually want to be part of.",
     ],
     snapshot: {
       eyebrow: 'Quick Snapshot',
@@ -205,16 +215,20 @@ const siteContent = {
         {
           label: 'Focus',
           value:
-            'Product marketing, go-to-market strategy, growth marketing, and lifecycle strategy',
+            'Product marketing, go-to-market strategy, and corporate communications',
         },
         {
-          label: 'Strength',
+          label: 'Experience',
           value:
-            'Turning messy goals into clear plans and measurable execution',
+            '11 years across SaaS, aviation, contracting, and sustainability',
         },
         {
-          label: 'Collaboration',
-          value: 'Product, design, sales, leadership, and external partners',
+          label: 'Strengths',
+          value: 'Positioning, demand generation, content, SEO, PR, and events',
+        },
+        {
+          label: 'Based in',
+          value: 'Bengaluru, India — working with global B2B and B2C teams',
         },
       ],
     },
@@ -224,35 +238,35 @@ const siteContent = {
     meta: {
       title: 'Projects | Natasha Gomes',
       description:
-        'Selected product marketing, go-to-market, and growth marketing projects by Natasha Gomes.',
+        'Selected product marketing, go-to-market, communications, and brand projects by Natasha Gomes.',
     },
     intro: {
       eyebrow: 'Projects',
       title: 'Selected work with the shape of a story.',
       description:
-        'Use this page to turn outcomes into compact case studies: the challenge, the strategy, the channels involved, and the result worth remembering.',
+        'A few campaigns and programs where positioning, content, and execution turned into measurable outcomes.',
     },
     items: [
       {
-        label: 'Demand Generation',
-        title: 'Rebuilt a campaign engine around audience intent.',
+        label: 'SaaS Go-to-Market',
+        title: '42Signals: category creation to first revenue.',
         description:
-          'A case study for integrated campaign planning, channel coordination, and pipeline-focused reporting.',
-        outcome: '42% qualified pipeline growth',
+          'As founding product marketer, I built the full GTM strategy — branding, positioning, messaging, and multi-channel campaigns — and a quality inbound lead pipeline, while lifting domain authority from 18 to 28 through SEO and content.',
+        outcome: '$0 to $12K MRR',
       },
       {
-        label: 'Product Launch',
-        title: 'Took a product launch from positioning to rollout.',
+        label: 'Corporate Events',
+        title: 'A 700+ delegate aviation security event.',
         description:
-          'Use this project to show messaging, stakeholder alignment, creative briefing, and post-launch performance analysis.',
-        outcome: '18 multi-channel launches',
+          "At Emirates Group I planned and managed one of the region's largest aviation security events end to end — content, branding, external partnerships, and overall marketing for 700+ international delegates.",
+        outcome: '700+ delegates hosted',
       },
       {
-        label: 'Lifecycle Marketing',
-        title: 'Improved conversion through tighter nurture journeys.',
+        label: 'Social & PR',
+        title: 'Organic social growth across seven brands.',
         description:
-          'A strong slot for email, CRM, onboarding, retention, or upsell work that turned strategy into a repeatable system.',
-        outcome: 'Cleaner customer journeys',
+          'As social and PR head at ECC Group, I ran 20 channels across seven companies, drove the full media presence and C-level communications, and grew the following organically.',
+        outcome: '17K to 93K followers',
       },
     ],
   },
@@ -261,36 +275,56 @@ const siteContent = {
     meta: {
       title: 'Experience | Natasha Gomes',
       description:
-        'Product marketing, growth marketing, and go-to-market experience for Natasha Gomes.',
+        'Product marketing, communications, and brand experience for Natasha Gomes across SaaS, aviation, and contracting.',
     },
     intro: {
       eyebrow: 'Experience',
-      title:
-        'A dedicated timeline gives your work history more room to breathe.',
+      title: 'Eleven years across SaaS, communications, and brand.',
       description:
-        'This page should feel more detailed than the home page teaser. Later, each role can link into deeper case studies, launches, or campaign breakdowns.',
+        'A timeline of product marketing, communications, and growth roles across B2B SaaS, aviation, contracting, and consumer brands.',
     },
     roles: [
       {
         years: '2023 - Present',
         title: 'Product Marketing Manager',
-        company: 'North Star Tech',
+        company: 'PromptCloud (42Signals)',
         summary:
-          'Owns product positioning, integrated launch strategy, sales alignment, lifecycle campaigns, and revenue reporting.',
+          'Founding product marketer for 42Signals, a B2B SaaS product: category creation and full GTM strategy across branding, positioning, messaging, and multi-channel campaigns. Built an inbound pipeline from scratch ($0 to $12K MRR), grew domain authority from 18 to 28, brought in global enterprise clients, and ran internal communications including an internal magazine, AMAs, and a company blog.',
       },
       {
-        years: '2020 - 2023',
-        title: 'Growth Marketing Manager',
-        company: 'Alder & Pine',
+        years: '2022 - 2023',
+        title: 'Associate Marketing Manager',
+        company: 'PromptCloud',
         summary:
-          'Led paid, content, social, and lifecycle programs with agency and internal team coordination.',
+          'Owned internal communication channels and content — blogs, whitepapers, case studies, newsletters, and reports — executed product marketing and GTM for a SaaS product, and ran email campaigns to nurture clients and attract new prospects.',
+      },
+      {
+        years: '2020 - 2022',
+        title: 'Associate Marketing & Communications Manager',
+        company: 'Emirates Group',
+        summary:
+          'Led internal and external communications for the organization and managed a team of four. Designed multi-channel marketing, hosted a 700+ delegate aviation security event, directed visual media and the in-house magazine, and ran employee engagement and CSR programs.',
       },
       {
         years: '2017 - 2020',
-        title: 'Content and Campaign Lead',
-        company: 'Studio Common',
+        title: 'Digital Marketing, Communications & PR Executive',
+        company: 'Engineering Contracting Company (ECC Group)',
         summary:
-          'Built campaign narratives, editorial calendars, and client-facing performance summaries.',
+          'Sole social media and PR head for seven group companies across 20 channels — growing the following from 17K to 93K organically, managing the full media presence and C-level communications, building and running websites, and coordinating events for 1,300+ employees.',
+      },
+      {
+        years: '2016 - 2017',
+        title: 'Social Media Executive',
+        company: 'Fitterfox',
+        summary:
+          'Ran social media strategy and execution, email marketing campaigns, and blog content to acquire and retain clients across all channels.',
+      },
+      {
+        years: '2015 - 2016',
+        title: 'Business Development & Marketing Executive',
+        company: 'Green Planet Ventures',
+        summary:
+          'Designed an integrated online and offline marketing strategy and built a new customer base of 300 accounts through outreach to national corporations.',
       },
     ],
   },
@@ -299,32 +333,31 @@ const siteContent = {
     meta: {
       title: 'Contact | Natasha Gomes',
       description:
-        'Contact Natasha Gomes for product marketing, growth marketing, go-to-market, consulting, or collaboration opportunities.',
+        'Contact Natasha Gomes for product marketing, communications, go-to-market, consulting, or collaboration opportunities.',
     },
     intro: {
       eyebrow: 'Contact',
-      title: 'Make it easy for the right opportunity to reach you.',
+      title: "Let's start a conversation.",
       description:
-        'For product marketing roles, growth opportunities, consulting, or collaborations, email directly or connect through the links below.',
+        'For product marketing and communications roles, consulting, or collaborations — email me directly or connect through the links below.',
     },
     emailCard: {
       label: 'Email',
-      email: 'natasha@portfolio.com',
+      email: 'natashagomes2202@gmail.com',
       description:
-        'Best for role inquiries, speaking requests, collaborations, or consulting conversations.',
+        'Best for role inquiries, consulting conversations, speaking, and collaborations.',
     },
     linkCard: {
-      label: 'Other Links',
-      description:
-        'Use these links for professional background, resume details, and current availability.',
+      label: 'Elsewhere',
+      description: 'Find my full background on LinkedIn or download my resume.',
       links: [
         {
           label: 'LinkedIn',
-          href: 'https://www.linkedin.com',
+          href: 'https://www.linkedin.com/in/natashagomes2202/',
         },
         {
-          label: 'Resume',
-          href: '/',
+          label: 'Download Resume',
+          href: '/natasha-gomes-resume.pdf',
         },
       ],
     },

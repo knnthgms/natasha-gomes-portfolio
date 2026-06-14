@@ -14,7 +14,7 @@ const Base = () => (
   <SiteLayout title={AppConfig.title} description={AppConfig.description}>
     <ThemedSection divider="bottom">
       <div className="mx-auto flex max-w-6xl flex-col gap-16 px-6 py-8 lg:px-12">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
           <div className="max-w-3xl">
             <ThemedText
               className="text-sm font-semibold uppercase tracking-[0.2em]"
@@ -53,27 +53,38 @@ const Base = () => (
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-            {home.stats.map((stat) => (
-              <ThemedSurface key={stat.label} className="p-6">
-                <ThemedText
-                  className="text-sm uppercase tracking-[0.18em]"
-                  variant="body"
-                >
-                  {stat.label}
-                </ThemedText>
-                <ThemedText
-                  className="mt-4 text-4xl font-semibold"
-                  variant="heading"
-                >
-                  {stat.value}
-                </ThemedText>
-                <ThemedText className="mt-2 text-sm leading-6" variant="body">
-                  {stat.description}
-                </ThemedText>
-              </ThemedSurface>
-            ))}
-          </div>
+          {/* Hero photograph. Drop your photo in the public/ folder and point
+              hero.image.src in siteContent.ts at it (e.g. '/hero-photo.jpg'). */}
+          <ThemedSurface className="overflow-hidden p-0">
+            <img
+              src={home.hero.image.src}
+              alt={home.hero.image.alt}
+              className="size-full object-cover"
+              style={{ aspectRatio: '4 / 5' }}
+            />
+          </ThemedSurface>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-3">
+          {home.stats.map((stat) => (
+            <ThemedSurface key={stat.label} className="p-6">
+              <ThemedText
+                className="text-sm uppercase tracking-[0.18em]"
+                variant="body"
+              >
+                {stat.label}
+              </ThemedText>
+              <ThemedText
+                className="mt-4 text-4xl font-semibold"
+                variant="heading"
+              >
+                {stat.value}
+              </ThemedText>
+              <ThemedText className="mt-2 text-sm leading-6" variant="body">
+                {stat.description}
+              </ThemedText>
+            </ThemedSurface>
+          ))}
         </div>
       </div>
     </ThemedSection>
